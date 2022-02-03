@@ -1,0 +1,6 @@
+def abbrev_name(name):
+    abbrev1 = name[0]
+    for i,ch in enumerate(name):
+        if ch == ' ':
+            abbrev2 = name[i+1]
+    return (f'{abbrev1.upper()}.{abbrev2.upper()}')
