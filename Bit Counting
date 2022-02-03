@@ -1,0 +1,4 @@
+def count_bits(n):
+    bin_num = bin(n)
+    bin_num = str(bin_num)[2:]
+    return bin_num.count('1')
