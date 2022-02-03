@@ -1,0 +1,4 @@
+def sumFunc(n):
+    return (n-1) * n//2
+def f(n, m):
+    return (n//m) * sumFunc(m) + sumFunc(n%m + 1)
