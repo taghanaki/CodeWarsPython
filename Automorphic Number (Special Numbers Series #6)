@@ -1,0 +1,8 @@
+def automorphic(n):
+    power = str(n*n)
+    n = str(n)
+    lenN = len(n)
+    if n[::-1] == power[:-lenN-1:-1]:
+        return 'Automorphic'
+    else:
+        return 'Not!!'
