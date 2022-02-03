@@ -1,0 +1,11 @@
+def rental_car_cost(d):
+    d7 = d // 7
+    a7 = 0
+    d3 = (d%7) // 3
+    a3 = 0
+    if d7:
+        a7 = 50
+    if d7 == 0 and d3:
+        a3 = 20
+    amount = (d * 40) - a7 - a3
+    return amount
