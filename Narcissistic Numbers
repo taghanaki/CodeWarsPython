@@ -1,0 +1,9 @@
+def is_narcissistic(i):
+    sum = 0
+    pow = len(str(i))
+    for n in str(i):
+        sum+= int(n) ** pow
+    if i == sum:
+        return True
+    else:
+        return False
