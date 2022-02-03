@@ -1,0 +1,9 @@
+def correct(s):
+    myDict = {'5':'S', '0':'O', '1':'I'}
+    myList = []
+    for c in s:
+        if c in myDict:
+            myList.append(myDict[c])
+        else:
+            myList.append(c)
+    return (''.join(myList))
