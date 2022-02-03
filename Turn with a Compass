@@ -1,0 +1,6 @@
+def direction(facing, turn):
+    myList = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW']
+    turn = (turn// 45) % 8
+    ind = myList.index(facing)
+    turn = (turn + ind) % 8
+    return myList[turn]
